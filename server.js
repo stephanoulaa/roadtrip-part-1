@@ -32,3 +32,5 @@ app.get('/SanFran', function(request, response){
 
 
 //how to make URL's "pretty" without .html???
+
+app.listen(8080);

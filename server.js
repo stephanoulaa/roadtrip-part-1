@@ -10,16 +10,16 @@ app.use(express.static('./public'));
 //index4.html = Boulder
 //index5.html = SanFran
 
-app.get('/Boston', function(request, response){
-    response.sendFile('./index3.html', {root: './public'})
+app.get('/', function(request, response){
+    response.sendFile('./index1.html', {root: './public'})
 })
 
 app.get('/NYC', function(request, response){
     response.sendFile('./index2.html', {root: './public'})
 })
 
-app.get('/', function(request, response){
-    response.sendFile('./index1.html', {root: './public'})
+app.get('/Chicago', function(request, response){
+    response.sendFile('./index3.html', {root: './public'})
 })
 
 app.get('/Boulder', function(request, response){

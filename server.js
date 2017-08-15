@@ -11,15 +11,15 @@ app.use(express.static('./public'));
 //index5.html = SanFran
 
 app.get('/Boston', function(request, response){
-    response.sendFile('./index1.html', {root: './public'})
+    response.sendFile('./index3.html', {root: './public'})
 })
 
 app.get('/NYC', function(request, response){
     response.sendFile('./index2.html', {root: './public'})
 })
 
-app.get('/Chicago', function(request, response){
-    response.sendFile('./index3.html', {root: './public'})
+app.get('/', function(request, response){
+    response.sendFile('./index1.html', {root: './public'})
 })
 
 app.get('/Boulder', function(request, response){
@@ -32,5 +32,8 @@ app.get('/SanFran', function(request, response){
 
 
 //how to make URL's "pretty" without .html???
+var port = 8000
+var link = 'localhost:'
+app.listen(port);
 
-app.listen(8080);
+console.log(link + port)

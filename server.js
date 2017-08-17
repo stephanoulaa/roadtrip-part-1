@@ -11,23 +11,23 @@ app.use(express.static('./public'));
 //index5.html = SanFran
 
 app.get('/', function(request, response){
-    response.sendFile('./index1.html', {root: './public'})
+    response.sendFile('./boston.html', {root: './public'})
 })
 
-app.get('/NYC', function(request, response){
-    response.sendFile('./index2.html', {root: './public'})
+app.get('/nyc', function(request, response){
+    response.sendFile('./nyc.html', {root: './public'})
 })
 
-app.get('/Chicago', function(request, response){
-    response.sendFile('./index3.html', {root: './public'})
+app.get('/chicago', function(request, response){
+    response.sendFile('./chicago.html', {root: './public'})
 })
 
-app.get('/Boulder', function(request, response){
-    response.sendFile('./index4.html', {root: './public'})
+app.get('/boulder', function(request, response){
+    response.sendFile('./boulder.html', {root: './public'})
 })
 
-app.get('/SanFran', function(request, response){
-    response.sendFile('./index5.html', {root: './public'})
+app.get('/sanfran', function(request, response){
+    response.sendFile('./sanfran.html', {root: './public'})
 })
 
 
